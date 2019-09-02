@@ -37,6 +37,7 @@ x = a.rstrip()
 x = a.lstrip()
 x = a.strip()
 
+x = a.split()
 
 #OPERADORES--------------------------------------
 
@@ -225,3 +226,19 @@ with open('arquivo.txt', 'w') as obj_arquivo:
     obj_arquivo.write("Hello World!")
 
 # w = escrita, a = concatenação, r = leitura (padrão)
+
+
+#EXCEÇÕES----------------------------------------
+
+try:
+    #...
+    except ZeroDivisionError:
+        #...
+
+
+try:
+    #...
+except FileNotFoundError:
+    pass #não exibe o erro 
+else:
+    #...        
