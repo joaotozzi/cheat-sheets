@@ -2,7 +2,7 @@
 
 import nome_modulo
 
-from nome_modulo import nome_funcao
+from nome_modulo import nome_funcao, NomeClasse
 
 import nome_modulo as alias
 
@@ -200,3 +200,28 @@ class CarroEletrico(Carro):
         self.bateria = 80
     
     #...
+
+
+#ARQUIVOS----------------------------------------
+
+#Leitura
+
+with open('arquivo.txt') as obj_arquivo:
+    conteudo = obj_arquivo.read()
+
+
+with open('arquivo.txt') as obj_arquivo:
+    linhas = obj_arquivo.readlines()
+
+
+with open('arquivo.txt') as obj_arquivo:
+    for linha in obj_arquivo:
+        #...
+
+
+#Escrita
+
+with open('arquivo.txt', 'w') as obj_arquivo:
+    obj_arquivo.write("Hello World!")
+
+# w = escrita, a = concatenação, r = leitura (padrão)
