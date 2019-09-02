@@ -1,3 +1,14 @@
+#MÓDULOS-----------------------------------------
+
+import nome_modulo
+
+from nome_modulo import nome_funcao
+
+import nome_modulo as alias
+
+from nome_modulo import * #todas as funções
+
+
 #VARIAVEIS---------------------------------------
 
 a = "texto"
@@ -11,7 +22,7 @@ d = True
 print("Hello World")
 
 x = input("Digite seu nome:")
-y = int(input("digite um número:"))
+y = int(input("Digite um número:"))
 
 
 #STRINGS-----------------------------------------
@@ -20,7 +31,7 @@ x = a.title()
 x = a.upper()
 x = a.lower()
 
-a = "texto " + str(b) + " outro_texto"
+a = "texto " + str(b) + " outro texto"
 
 x = a.rstrip()
 x = a.lstrip()
@@ -33,7 +44,8 @@ y = 2 + 3   #5
 y = 3 - 2   #1
 y = 2 * 3   #6
 y = 3 / 2   #1.5
-y = 3 ** 2  #9
+y = 3 ** 2  #9 (potência)
+y = 4 % 3   #1 (resto)
 
 
 #LISTAS------------------------------------------
@@ -135,3 +147,56 @@ for chave in sorted(dicionario.keys()):
 for valor in set(dicionario.values()):
     #...
 
+
+#WHILE-------------------------------------------
+
+while i <= 5:
+    #...
+
+
+#FUNÇÕES-----------------------------------------
+
+def nome_funcao():
+    #...
+    return True
+
+
+def descreve_pet(nome, tipo_animal='cachorro'):
+    #...
+
+
+def montar_pizza(*recheios): #tupla
+    #...
+
+
+def criar_perfil(**info_usuario): #dicionário
+    #...
+
+
+#CLASSES-----------------------------------------
+
+class Cachorro():
+    """Descrição da classe"""
+
+    def __init__(self, nome): #construtor
+        self.nome = nome
+
+    def senta(self):
+        #...
+
+
+meu_cachorro = Cachorro('laika')
+meu_cachorro.senta()
+
+
+class Carro():
+    #...
+
+class CarroEletrico(Carro):
+    """Descrição"""
+
+    def __init__(self, marca, modelo, ano):
+        super().__init__(marca, modelo, ano)
+        self.bateria = 80
+    
+    #...
