@@ -24,7 +24,7 @@ String nome = "João"; //não é uma variável primitiva
 byte b = 100;
 short s = 10000;
 long l = 100000;
-float = 5.99f;
+float f = 5.99f;
 
 //Casting
 int i = (int) 3.14 //3
